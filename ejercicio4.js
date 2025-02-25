@@ -18,3 +18,11 @@ const cartoons = [
 ]
 
 // Añade tu código de bucle aquí
+let oldestCartoon = cartoons[0]
+for (const cartoon of cartoons) {
+  if (oldestCartoon.debut > cartoon.debut) {
+    oldestCartoon = cartoon
+  }
+}
+
+console.log(oldestCartoon.name)
